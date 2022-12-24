@@ -40,3 +40,61 @@
 //     if (b == 1) Console.WriteLine($"Число {a} в {b} степени = {a}");
 // else
 //     Console.WriteLine($"Число {a} в {b} степени = {RasingPositiveDegree(a, b)}");
+
+
+// // В этом примере обращаюсь к элементу массива и проверяю его на соответсвие условию задачи 
+// // (является ли элемент (число) массива делителем)
+
+// int CountingSumOfDigits(int a, int[] b)
+// {
+//     int result = 0;
+//     for (int i = 0; i < b.Length; i++)
+//     {
+//         if (b[i] == 0)
+//         {
+//             result = 0;
+//         }
+//         else
+//             if (a % b[i] == 0)
+//         {
+//             result = result + b[i];
+//         }
+//     }
+//     return result;
+// }
+
+// Console.WriteLine("Введите число для проверки: ");
+// string num1 = Console.ReadLine();
+// int[] num2 = num1.Select(num1 => Convert.ToInt32(Char.GetNumericValue(num1))).ToArray();
+// int num3 = Convert.ToInt32(num1);
+
+// int sumofdigits = CountingSumOfDigits(num3, num2);
+
+// Console.WriteLine(sumofdigits);
+
+// // В этом примере обращаюсь к числу, полученному при выполнении оператора остатка 
+// // и проверяю его на соответсвие условию задачи (является ли число делителем)
+
+// int CountingSumOfDigits(int a, string b)
+// {
+//     int sum = 0;
+//     int c = a;
+//     for (int i = 0; i < b.Length; i++)
+//     {
+//         int digit = c % 10;
+//         if (a % digit == 0)
+//         {
+//             sum = sum + digit;
+//         }
+//         c = c / 10;
+//     }
+//     return sum;
+// }
+
+// Console.WriteLine("Введите число для проверки: ");
+// string num1 = Console.ReadLine();
+// int num3 = Convert.ToInt32(num1);
+
+// int sumofdigits = CountingSumOfDigits(num3, num1);
+
+// Console.WriteLine(sumofdigits);
